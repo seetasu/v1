@@ -1,0 +1,33 @@
+/* Pen-specific styles */
+* {
+  box-sizing: border-box;
+}
+body
+{
+	margin: 0;
+}
+html, body, section {
+  height: 100%;
+}
+
+.evaluation-wrap
+{
+	height: 100%;
+	width: 100%;
+}
+
+.question-section
+{
+	width: 40%;
+	background-color: #d5ebd1;
+	float: left;
+	height: 100%;
+}
+
+.answers-section
+{
+	width: 60%;
+	background-color: white;
+	float: left;
+	height: 100%;
+}
