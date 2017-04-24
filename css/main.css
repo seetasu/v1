@@ -1,0 +1,99 @@
+html, body {
+  width: 100%; }
+
+.content-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+
+h1, h2, p {
+  margin: 0; }
+
+#homepage {
+  height: 100vh;
+  background-image: url("../img/landingpage-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #homepage .site-header {
+    box-sizing: border-box;
+    padding-top: 125px;
+    padding-left: 500px; }
+    #homepage .site-header h1 {
+      font-size: 70px;
+      font-weight: 600;
+      color: white; }
+    #homepage .site-header img {
+      height: 65px;
+      margin-top: 30px; }
+
+.white-bg, .gray-bg {
+  padding-top: 50px; }
+
+.gray-bg {
+  background-color: #fbfbfb; }
+
+.section-brief {
+  text-align: center; }
+
+.option-container {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px; }
+
+.option-col {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-box: box-sizing;
+  padding-bottom: 50px;
+  width: 25%;
+  float: left; }
+
+.option-icon {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  box-sizing: border-box; }
+
+@media only screen and (max-width: 1000px) {
+  .option-icon {
+    width: 60%; } }
+.nav {
+  position: relative;
+  display: block;
+  list-style: none;
+  float: right;
+  margin-top: 35px; }
+  .nav ul {
+    float: right; }
+    .nav ul li {
+      float: left;
+      display: block;
+      margin-left: 45px;
+      font-size: 9px; }
+      .nav ul li a {
+        color: white; }
+        .nav ul li a:hover {
+          text-decoration: none;
+          color: #4d4d4d; }
+
+.sub-title {
+  text-align: center;
+  color: #4d4d4d;
+  font-family: Quicksand, sans-serif;
+  font-weight: 100;
+  font-size: 20px; }
+
+.sub-title-hr {
+  border-bottom: 1px solid #4d4d4d;
+  width: 100px;
+  margin: 5px auto 15px auto; }
+
+.para-title {
+  font-family: Ubuntu, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 10px; }
+
+/*# sourceMappingURL=main.css.map */

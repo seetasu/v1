@@ -1,0 +1,24 @@
+@import 'color';
+@import 'typography';
+
+html, body
+{
+	width: 100%;
+}
+
+.page-container
+{
+}
+
+.content-container
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+h1, h2, p
+{
+	margin:0;
+}

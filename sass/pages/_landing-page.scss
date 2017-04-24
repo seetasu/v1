@@ -1,0 +1,95 @@
+@import 'base/color';
+
+#homepage
+{
+	height: 100vh;
+	background-image: url("../img/landingpage-bg.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	.site-header
+	{
+		box-sizing:border-box;
+		padding-top: 125px;
+		padding-left: 500px;
+		h1
+		{
+			
+			font-size: 70px;
+			font-weight: $bold;
+			color: white;
+		};
+		img 
+		{
+			height: 65px;
+			margin-top: 30px;
+		}
+	}
+}
+
+.white-bg
+{
+	padding-top: 50px;
+	// padding-bottom: 50px;
+}
+
+.gray-bg
+{
+	@extend .white-bg;
+	background-color: $bg-gray;
+}
+
+.section-brief
+{
+	text-align: center;
+}
+
+// Options section
+$option-container-padding: 50px;
+.option-container
+{
+	padding-left:$option-container-padding;
+	padding-right:$option-container-padding;
+	padding-top:$option-container-padding;
+	// margin-top: 50px;
+}
+
+$option-col-padding: 30px;
+.option-col
+{
+	padding-left:$option-col-padding;
+	padding-right:$option-col-padding;
+	border-box: box-sizing;
+	padding-bottom: 50px;
+	width: 25%;
+	float: left;
+}
+
+.option-icon
+{
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	box-sizing:border-box;
+}
+
+// @media only screen and (min-width: 1000px)
+// {
+// 	.option-col
+// 	{
+// 		width: 25%;
+// 	}
+// }
+
+@media only screen and (max-width: 1000px)
+{
+	// .option-col
+	// {
+	// 	width: 50%;
+	// }
+	.option-icon
+	{
+		width: 60%;
+	}
+}

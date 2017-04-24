@@ -1,7 +1,0 @@
-
-"version": 3,
-"mappings": "AAGA,IACA;EACC,UAAU,EALN,OAAO;EAMX,WAAW,EALP,WAAW",
-"sources": ["../sass/sytle.scss"],
-"names": [],
-"file": "sytle.css"
-}
