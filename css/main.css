@@ -6,6 +6,9 @@ html, body {
   margin-left: auto;
   margin-right: auto; }
 
+.clear {
+  clear: both; }
+
 h1, h2, p {
   margin: 0; }
 
@@ -33,7 +36,13 @@ h1, h2, p {
   background-color: #fbfbfb; }
 
 .section-brief {
-  text-align: center; }
+  text-align: center;
+  font-size: 11px;
+  line-height: 17px; }
+
+.para {
+  font-size: 13px;
+  line-height: 20px; }
 
 .option-container {
   padding-left: 50px;
@@ -45,20 +54,52 @@ h1, h2, p {
   padding-right: 30px;
   border-box: box-sizing;
   padding-bottom: 50px;
-  width: 25%;
+  width: 100%;
   float: left; }
 
 .option-icon {
-  width: 50%;
+  width: 30%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
   box-sizing: border-box; }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 1001px) {
+  .option-col {
+    width: 25%; }
+
   .option-icon {
-    width: 60%; } }
+    width: 50%; } }
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .option-col {
+    width: 50%; }
+
+  .option-icon {
+    width: 50%; } }
+.evaluation-wrap {
+  position: relative; }
+
+.question-section {
+  width: 50%;
+  background-color: red;
+  height: 100vh;
+  float: left; }
+
+.answers-section {
+  width: 50%;
+  background-color: green;
+  height: 100vh;
+  float: right; }
+  .answers-section ul {
+    list-style: none; }
+
+.next-nav {
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+  position: absolute; }
+
 .nav {
   position: relative;
   display: block;
@@ -78,6 +119,13 @@ h1, h2, p {
           text-decoration: none;
           color: #4d4d4d; }
 
+.red-btn {
+  font-size: 13px;
+  border: 1px solid black;
+  text-align: center;
+  width: 90px;
+  padding: 10px 5px 10px 5px; }
+
 .sub-title {
   text-align: center;
   color: #4d4d4d;
@@ -95,5 +143,67 @@ h1, h2, p {
   font-size: 17px;
   font-weight: 600;
   margin-bottom: 10px; }
+
+.contact-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%; }
+
+.about-us {
+  background-color: white;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 25px; }
+  .about-us #contact-logo {
+    width: 100%;
+    margin-bottom: 20px; }
+    .about-us #contact-logo a {
+      width: 60%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+      .about-us #contact-logo a img {
+        width: 100%; }
+  .about-us #ieadsm-intro {
+    width: 100%; }
+
+.contact-list {
+  width: 100%;
+  list-style: none; }
+  .contact-list .countries {
+    width: 46%;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-sizing: border-box;
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px; }
+
+@media only screen and (min-width: 1001px) {
+  .about-us #contact-logo {
+    width: 30%;
+    float: left;
+    margin-bottom: 0; }
+    .about-us #contact-logo a {
+      width: 60%; }
+      .about-us #contact-logo a img {
+        width: 100%; }
+  .about-us #ieadsm-intro {
+    width: 70%;
+    float: right; } }
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  .about-us #contact-logo {
+    width: 30%;
+    float: left;
+    margin-bottom: 0; }
+    .about-us #contact-logo a {
+      width: 100%; }
+      .about-us #contact-logo a img {
+        width: 100%; }
+  .about-us #ieadsm-intro {
+    width: 70%;
+    float: right; } }
 
 /*# sourceMappingURL=main.css.map */

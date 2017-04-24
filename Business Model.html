@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Business Model</title>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/test-page.css">
+	<script type="text/javascript" src ="js/quiz.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+</head>
+<body>
+	<div id="quiz-container"></div>
+	<script type="text/javascript">
+		var init=
+		{
+			'questions':
+			[{
+				'question':'How does your business contribute for a green energy transition in the market?',
+				'answers':['Use/promote renewables','Promote user sustainable lifestyle','N/A use fossil fuels'],
+				'answerWeight':[1,2,3]
+			},
+			{
+				'question':'Do you know when the value of EE is deliver to the user?',
+				'answers':['Before use the energy','After use the energy'],
+				'answerWeight':[1,2]
+			},
+			{
+				'question':'Where do you position yourself and your business motivation?',
+				'answers':['Social','Economical','Environmental'],
+				'answerWeight':[1,2,3]
+			},
+			{
+				'question':'How do you like hamburger?',
+				'answers':['A lot','Guess','I HATE IT'],
+				'answerWeight':[1,2,3]
+			},
+			{
+				'question':'What innovation policies would you like politicians to implement in order to help your business?',
+				'answers':['Financial subsidies','Create a protected market space for new companies','Program for skills development'],
+				'answerWeight':[1,2,3,4]
+			}]
+		}; 
+		$(function(){ 
+		    $('#quiz-container').jquizzy({ 
+		        questions: init.questions 
+		    }); 
+		}); 
+	</script>
+</body>
+</html>
