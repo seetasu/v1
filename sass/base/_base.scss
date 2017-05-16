@@ -6,24 +6,40 @@ html, body
 	width: 100%;
 }
 
+*{
+	box-sizing: border-box;
+}
+
 .page-container
 {
 }
 
 .content-container
 {
-	width: 90%;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 
 .clear
 {
 	clear:both;
 }
 
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
 
 h1, h2, p
 {
 	margin:0;
+}
+
+.note{
+	font-size: 10px;
+	font-family: $para-font;
 }

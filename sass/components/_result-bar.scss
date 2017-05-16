@@ -1,0 +1,185 @@
+@import '../base/typography';
+@import '../base/color';
+
+.result-keeper{
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 85px;
+}
+
+.result-keeper2{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.result-ul{
+	list-style: none;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	li{
+		margin-top: 10px; 
+		margin-bottom: 10px;
+		.type-name-double{
+			font-size: 13px;
+			font-weight: 500;
+			line-height: 15px;
+			width: 120px;
+			float: left;
+		}
+		.type-name-single{
+			font-size: 13px;
+			font-weight: 500;
+			line-height: 30px;
+			width: 120px;
+			float: left;
+		}		
+		.percentage{
+			font-size: 13px;
+			font-weight: 500;
+			line-height: 30px;
+			display: inline-block;
+			margin-left: 10px;
+		}
+		.bars{
+			height: 30px;
+			width: 660px;
+			background-image: url("../img/bar border.png");
+			background-size: 100% 100%;
+			float: right;
+			#ph_bar,#rf_bar,#pse_bar,#svc_bar{
+				float: left;
+				height: 30px;
+			}
+			img{
+				width: 100%;
+				height: 20px;
+			}
+		}
+	}
+}
+
+.bm-type
+{
+	width: 860px;
+	margin: 75px auto;
+	background-image: url("../img/bar charts border.png");
+	background-size: 100% 100%;
+	.bm-type-name-scentence{
+		text-align: center;
+		line-height: 40px;
+		padding-top: 10px;
+		p{
+			font-size: 14px;
+		}
+		#bm-type-name{
+			font-family: $title-font;
+			color: $green;
+			font-size: 40px;
+		}
+	}
+	.bm-type-bar-charts
+	{	
+		padding: 40px;
+		margin: 0 auto;
+	}
+}
+
+.tips-container{
+	width: 80%;
+	margin: 80px auto;
+	.tips-title{
+		font-family: $title-font;
+		color: $text-gray;
+		margin-bottom: 20px;
+	}
+}
+
+#tips-skill{
+	.tip-skills-row{
+		div{
+			background-color: $bg-gray;
+			padding: 50px 30px;
+			.para-title{
+				font-size: 19px;
+				margin-bottom: 15px;
+			}
+			img{
+				float: right;
+				margin-top: 25px;
+				height: 90px;
+			}
+		}
+		#sensing{
+			width: 32%;
+			margin-right: 2%;
+			float: left;
+		}
+		#orchestrating
+		{
+			width: 32%;
+			margin-right: 2%;
+			float: left;
+		}
+		#conceptualizing{
+			width: 32%;
+			display: inline-block;
+		}
+	}
+}
+
+#tips-context-cases
+{
+	.tips-context{
+		width: 60%;
+		float: left;
+		padding-right: 5%;
+	}
+	.tips-cases{
+		width: 40%;
+		display: inline-block;
+		a{
+			color: $green;
+		}
+	}
+}
+
+.download-stuff-wrapper{
+	width: 80%;
+	margin: 80px auto;
+	#download{
+		width: 50%;
+		float: left;
+		padding-right: 5%;
+		padding-top: 40px;
+		.red-btn{
+			float:right;
+			width: 300px;
+			&:hover{
+				color:white;
+			}
+		}
+	}
+	#share{
+		width: 50%;
+		display: inline-block;
+		.social-media-row{
+			padding-top: 10px;
+			img{
+				height: 45px;
+				margin-right: 15px;
+			}
+		}
+	}
+	#back-to-options{
+		width: 200px;
+		margin: 50px auto 0 auto;
+		.scroll-wrapper{
+			width: 55px;
+			margin: 5px auto;
+			img{
+				width: 100%;
+			}
+		}
+	}
+}

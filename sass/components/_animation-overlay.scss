@@ -1,0 +1,56 @@
+.animation
+{
+	width: 50%;
+	position: absolute;
+	left: 0;
+	bottom: 50px;
+	line-height: 0;
+	// #illustration{
+	// 	position: absolute;
+	// 	left: 50%;
+	// 	transform: translateX(-50%);
+	// }
+	.bm-animation, .sk-animation, .ct-animation{
+		margin: 0 auto;
+	}
+	#partners{
+		background-image: url('../img/partners bg.svg');
+		background-size: 100% 100%;
+	}
+	#valueProposition{
+		background-image: url('../img/proposition bg.svg');
+		background-size: 100% 100%;
+	}
+	#relationships{
+		background-image: url('../img/relationships bg.svg');
+		background-size: 100% 100%;
+	}
+	#revenue{
+		background-image: url('../img/revenue bg.svg');
+		background-size: 100% 100%;
+	}
+	#activities{
+		background-image: url('../img/activities bg.svg');
+		background-size: 100% 100%;
+	}
+	#sensing{
+		background-image: url('../img/sensing.svg');
+		background-size: 100% 100%;
+	}
+	#orchestrating{
+		background-image: url('../img/orchestrating.svg');
+		background-size: 100% 100%;
+	}
+	#conceptualizing{
+		background-image: url('../img/conceptualizing.svg');
+		background-size: 100% 100%;
+	}
+	#scaling{
+		background-image: url('../img/scaling.svg');
+		background-size: 100% 100%;
+	}
+	#context{
+		background-image: url('../img/context-blue.svg');
+		background-size: 100% 100%;
+	}
+}

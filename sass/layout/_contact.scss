@@ -1,8 +1,12 @@
+@import '../base/color';
+@import '../base/typography';
+
 .contact-wrap
 {
 	margin-left: auto;
 	margin-right: auto;
 	width: 65%;
+	color: $text-gray
 }
 
 .about-us
@@ -46,6 +50,23 @@
 		background-color: white;
 		margin-top: 20px;
 		padding:20px;
+		.para-title{
+			font-family: $subtitle-font;
+			margin-bottom: 10px;
+			font-weight: 700;
+		}
+		.para
+		{
+			b{
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+#ieadsm-intro{
+	.para-title{
+		font-family: $subtitle-font;
 	}
 }
 

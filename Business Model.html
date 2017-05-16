@@ -1,44 +1,270 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Business Model</title>
+	<title>Fit to Serve</title>
+
+	<!-- viewport and stuff -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="author" content="Lezhi Su">
+
+    <!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+
+	<!-- vendor css -->
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/responsive-nav.css">
+
+	<!-- local css -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/test-page-vendor-extension.css">
+	<!-- <link rel="stylesheet" href="css/test-page.css"> -->
+
+	<!-- vendor js & extension -->
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/test-page.css">
-	<script type="text/javascript" src ="js/quiz.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<script type="text/javascript" src ="js/echarts.min.js"></script>
+	<script src="js/jquery.lazylinepainter-1.7.0.js"></script>
+	<!-- <script src="js/svgdata.js"></script> -->
+	
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+	<link rel="stylesheet" type="text/css" href="css/cs-skin-border.css" />
 
 </head>
 <body>
-	<div id="quiz-container"></div>
+	<div class="navigation">
+		<a id="to-home" href="index.html">
+			<img src="img/ieadsm-logo.png">
+		</a>
+		<div class="dropdown">
+			<button class="dropbtn">
+				<img src="img/hamburger.svg">
+			</button>
+			<div class="dropdown-content">
+		    	<a href="index.html#belief" target="_blank">Intro</a>
+		    	<a href="index.html#evaluation" target="_blank">Evaluation</a>
+		    	<a href="index.html#other-option" target="_blank">Options</a>
+		    	<a href="index.html#contact" target="_blank">Contact</a>
+		    </div>
+		</div>
+	</div>
+	
+	<div class=dropdown-container>
+		<section id="country-select">
+			<select class="cs-select cs-skin-border">
+				<option value="" disabled selected>Country</option>
+				<option value="nl">Netherlands</option>
+				<option value="swd">Sweden</option>
+				<option value="ast">Austria</option>
+				<option value="nw">Norway</option>
+				<option value="swl">Switzerland</option>
+				<option value="sk">South Korea</option>
+			</select>
+		</section>
+		<section id="category-select">
+			<select class="cs-select cs-skin-border">
+				<option value="" disabled selected>Category</option>
+				<option value="retrofitting">Retrofitting</option>
+				<option value="total-solutions">Total solutions</option>
+				<option value="heating">Heating</option>
+				<option value="lighting">Lighting</option>
+				<option value="smart-solutions">Smart solutions</option>
+			</select>
+		</section>
+	</div>
+	
+	<div id="quiz-container">
+	</div>
+
+	<div class="animation">
+		<!-- <div id='illustration' style="width: 398px; height: 267px;"></div> -->		
+		<div class="bm-animation" id='partners' style="width: 500px; height: 310px;"></div>
+		<div class="bm-animation" id='valueProposition' style="width: 500px; height: 310px;"></div>
+		<div class="bm-animation" id='relationships' style="width: 500px; height: 310px;"></div>
+		<div class="bm-animation" id='revenue' style="width: 500px; height: 310px;"></div>
+		<div class="bm-animation" id='activities' style="width: 500px; height: 310px;"></div>
+		<div class="sk-animation" id='sensing' style="width: 500px; height: 310px;"></div>
+		<div class="sk-animation" id='orchestrating' style="width: 500px; height: 310px;"></div>
+		<div class="sk-animation" id='conceptualizing' style="width: 500px; height: 310px;"></div>
+		<div class="sk-animation" id='scaling' style="width: 500px; height: 310px;"></div>
+		<div class="ct-animation" id='context' style="width: 500px; height: 310px;"></div>
+	</div>
+
+	
+
+	<div class="business-model-overlay">
+		<div class="overlay-wrapper">
+			<div class="overlay-title">
+				<p>
+					Step 1<br>
+					<span>Business Model</span>
+				</p>
+			</div>
+			<div class="overlay-content">
+				<div class="overlay-text">
+					<p class="para">
+						A business model describes the way value is created, captured and brought to market. In this assessment, we use the business model canvas by Alexander Osterwalder to evaluate your business model. This canvas consists of 9 buildingblocks that represent the key elements of how you run your business. 
+						<br><br/>If you want to learn more about Osterwalder's Business Model, click <a href="https://strategyzer.com/canvas" target="_blank"><strong>here</strong></a>.
+					</p>
+				</div>
+				<div class="overlay-img">
+					<img src="img/business model.png" alt="">
+				</div>
+				<div style="clear: both"></div>
+			</div>
+			<div class="overlay-close">
+				<div class="red-btn" id="overlay-close-business">
+					I've got it, continue to test	
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="skill-overlay">
+		<div class="overlay-wrapper">
+			<div class="overlay-title">
+				<p>
+					Step 2 <br>
+					<span>Capabilities</span>
+				</p>
+			</div>
+			<div class="overlay-content">
+				<div class="overlay-text">
+					<p class="para">
+						The second set of questions is about the key capabilities of your company. Of course, a fit-to serve business model alone will not do the trick. Every entrepreneur needs to have a set of well developed capabilities. 
+						<ul>
+							<li>
+								<p class="para">
+								<b>Sensing user needs</b> of whatever segment, industry, SMEs, industry, households and (technological) is about the way you obtain relevant insights on needs and wishes of your –potential- clients.</p> 
+							</li>
+							<li>
+								<p class="para">
+								The <b>co-producing and orchestrating</b> skill is about how all the relevant actors and providers you work with enable a seamless, coherent and smooth end-user experience.
+								</p>
+							</li>
+							<li>
+								<p class="para"><b>Conceptualizing</b> is about using the relevant insights to identify patterns and opportunities that can be used for continuous innovation.</p>
+							</li>
+							<li>
+								<p class="para"><b>Scaling and internal stretching</b> capabilities relate to your capabilities to create a smooth and aligned service oriented company structure.</p>
+							</li>
+						</ul>
+					</p>
+				</div>
+				<div class="overlay-img">
+					<img src="img/skills.svg" alt="">
+				</div>
+				<div style="clear: both"></div>
+			</div>
+			<div class="overlay-close">
+				<div class="red-btn" id="overlay-close-skill">
+					I've got it, continue to test	
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="context-overlay">
+		<div class="overlay-wrapper">
+			<div class="overlay-title">
+				<p>
+					Step 3<br>
+					<span>Company Context</span>
+				</p>
+			</div>
+			<div class="overlay-content">
+				<div class="overlay-text">
+					<p class="para">
+						The market of energy efficiency is very much regulated, even political sometimes. In order to reach your goals, you know you have to deal with all relevant stakeholders in the right way. However, how you are dealing with it, might not be the most effective way. The following questions are about the way you’re dealing with this. 
+					</p>
+				</div>
+				<div class="overlay-img">
+					<img src="img/context.svg" alt="">
+				</div>
+				<div style="clear: both"></div>
+			</div>
+			<div class="overlay-close">
+				<div class="red-btn" id="overlay-close-context">
+					I've got it, continue to test	
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<script src="js/classie.js"></script>
+	<script src="js/selectFx.js"></script>
+	<script>
+		(function() {
+			[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+				new SelectFx(el);
+			} );
+		})();
+	</script>
+	
+	<!-- vendor js - customize select -->
 	<script type="text/javascript">
 		var init=
 		{
 			'questions':
 			[{
-				'question':'How does your business contribute for a green energy transition in the market?',
-				'answers':['Use/promote renewables','Promote user sustainable lifestyle','N/A use fossil fuels'],
-				'answerWeight':[1,2,3]
+				'question':'What is the main purpose of your long term partnerships?',
+				'answers':['The partners I work with fill up a gap in the value chain. Like sales, distribution or operations. I need my partners to help me bring my business further.','I base my choice on their performance and branding skills. This way I can improve my offer. ','I cooperate with a few partners within the energy efficiency business but also in other businesses. This way I can focus beyond energy efficiency.','My company is part of a network that works closely to create solutions. With clients.'],
+				'answerWeight':['a','b','c','d']
 			},
 			{
-				'question':'Do you know when the value of EE is deliver to the user?',
-				'answers':['Before use the energy','After use the energy'],
-				'answerWeight':[1,2]
+				'question':'How would you describe de role of energy efficiency in your value proposition?',
+				'answers':['I am in the business of state of the art energy efficient technology','Although my solution is Energy Efficient, my clients are not interested in energy efficiency upfront. That’s why I put other benefits in the core of communication. ','My clients are interested in other values then energy efficiency. Therefore, I make sure the value I offer consists of other key benefits. My clients experience energy efficiency is while using my offer. ','Energy efficiency is a green and environmental friendly way of life. I consider it as a boundary condition in every business. My clients wouldn’t want it any other way.'],
+				'answerWeight':['a','b','c','d']
 			},
 			{
-				'question':'Where do you position yourself and your business motivation?',
-				'answers':['Social','Economical','Environmental'],
-				'answerWeight':[1,2,3]
+				'question':'How would you describe the  relation you have with your clients?',
+				'answers':['Once the work is finished and the problem is solved, I move on to the next client. Garuantees an maintenance of the installation is of course essential to keep the customer satisfied. ','To my clients, the process of becoming aware of their options and  making the right choice is frustrating and complex. I help them in this process.','I consider the actual transaction as the starting point of my relation with my clients. When they decide to buy my offer, our relation starts. ','My clients are my partners. I learn a lot from them. '],
+				'answerWeight':['a','b','c','d']
 			},
 			{
-				'question':'How do you like hamburger?',
-				'answers':['A lot','Guess','I HATE IT'],
-				'answerWeight':[1,2,3]
+				'question':'What do your clients pay for?',
+				'answers':['They pay for the product and installation. ','They pay for the solution I offer at the moment it is delivered.  ','They start paying once they have subscribed. ','As a member, they pay for use and extra services. '],
+				'answerWeight':['a','b','c','d']
 			},
 			{
-				'question':'What innovation policies would you like politicians to implement in order to help your business?',
-				'answers':['Financial subsidies','Create a protected market space for new companies','Program for skills development'],
-				'answerWeight':[1,2,3,4]
-			}]
+				'question':'How do you describe the key activities of your company?',
+				'answers':['Technological production, marketing and sales.','Technological innovation, marketing and sales ','Service innovation, research and business development','Service innovation, (data) research and business development'],
+				'answerWeight':['a','b','c','d']
+			},
+			{
+				'question':'What kind of activities do you undertake to understand the needs and wishes of your clients?',
+				'answers':['I don’t have the time nor the money to conduct market research on a structured basis. I talk to my clients every day. I think I know them very well. ',' I have learned that it is important to listen to clients and prospects, however, there is no systematic research in my business. ','Client insights are the core of my business. My company puts a lot of effort in understanding the user needs.','My clients are my partners. I learn a lot from them. '],
+				'answerWeight':['a','b','c','d']
+			},
+			{
+				'question':'What efforts do you take to make sure your offer is perceived as a coherent experience?',
+				'answers':['We explain the solution and the benefits of the solution very clear. It is all about following our instructions.',' I work hard to make sure that everyone who is in contact with my clients, speaks the same language and work the same way. ','My clients want to experience a coherent service. It’s my job to align all my partners and work hard to deliver this experience.','My clients want to interact in a service that they feel like it is tailored to their needs. My company and my partners are constantly working to meet this expectation. '],
+				'answerWeight':['a','b','c','d']
+			},
+			{
+				'question':'What do you do to keep your offer state of the art, and tailor it to the needs of your client?',
+				'answers':['My offer is good as it is. My challenge is all about how to market it. ','My offer is good as it is. However, I improve the way I frame my offer as well as to convince my prospects to experience my offer.  ','My offer is never finished. I need to add new and relevant benefits to my service to meet the expectation of my clients.  ','My clients ask for new value or extra benefits all the time. So, innovation is the result of continuous interaction with clients.'],
+				'answerWeight':['a','b','c','d']
+			},
+			{
+				'question':'What do you do to train employees, partners and grow your business?',
+				'answers':['We train our sales people to sell and our sales partners to learn as much a about the offer as they need to be able to sell it.',' Reframing the offer in terms my clients understand it better. Also, cooperating with partners who can help me improve my sales funnel.','On a continuous base. This is only the starting point. I have to keep up with my clients and offer them new and relevant value. ','There are new niches out there everywhere. The main effort I have with this is to get a grip on the many data I have and design new and tailored offers. '],
+				'answerWeight':['a','b','c','d']
+			},
+			{
+				'question':'How do you respond when rules do inhibit your business?',
+				'answers':['Not much. What can I do?','I try to partner with stakeholders who are more or less on the same level as I am.',' I try to create a coalition of influential stakeholders. Together, we can create momentum. '],
+				'answerWeight':['a','b','d']
+			},
+			{
+				'question':'What are your expectation considering stakeholders and policy makers? ',
+				'answers':['I expect them to support me with subsidies and abolish some of the inhibiting rules. ','I expect them to support my business by creating more consumer awareness on the topic of energy efficiency.  ','I expect them to be open to my experiences and learning. Networks,'],
+				'answerWeight':['a','b','c']
+			},
+			]
 		}; 
 		$(function(){ 
 		    $('#quiz-container').jquizzy({ 
@@ -46,5 +272,6 @@
 		    }); 
 		}); 
 	</script>
+	<script type="text/javascript" src ="js/quiz.js"></script>
 </body>
 </html>

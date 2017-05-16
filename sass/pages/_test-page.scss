@@ -1,31 +1,31 @@
-.evaluation-wrap
+@import '../base/typography';
+
+@import '../components/dropdown-select';
+@import '../components/animation-overlay';
+@import '../components/business-model-overlay';
+@import '../components/btn';
+@import '../components/result-bar';
+@import '../components/nav';
+
+.answers li
 {
-	position: relative;
+	font-size: 17px;
+	font-family: $para-font;
+	line-height: 25px;
+	padding: 10px 30px;
 }
 
-.question-section
-{
-	width: 50%;
-	background-color: red;
-	height: 100vh;
-	float: left;
+#main{
+	width: 600px;
+	height: 400px;
 }
 
-.answers-section
+.test-title
 {
-	width: 50%;
-	background-color: green;
-	height: 100vh;
-	float: right;
-	ul{
-		list-style: none;
-	}
+	font-size: 14px;
+	font-weight: 500;
+	text-align: center;
+	height: 60px;
 }
 
-.next-nav
-{
-	height: 50px;
-	width: 50px;
-	background-color: blue;
-	position: absolute;
-}
+

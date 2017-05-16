@@ -1,0 +1,18 @@
+@import '../vendors/cs-select';
+@import '../vendors/cs-skin-border';
+
+.dropdown-container
+{
+	position: absolute;
+	width: 50%;
+	z-index: 3;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#country-select, #category-select
+{
+	margin:50px auto;
+	width: 300px;
+}

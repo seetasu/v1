@@ -1,28 +1,147 @@
+@import 'base/base';
 @import 'base/color';
+@import 'base/typography';
+
+.nav-container
+{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: fixed;
+	.nav-black{
+		color:$text-gray;
+	}
+}
 
 #homepage
 {
 	height: 100vh;
-	background-image: url("../img/landingpage-bg.jpeg");
+	// background-image: url("../img/landingpage-bg.jpeg");
+	background-image: linear-gradient(140deg, $green 25%, $dark-blue 93%);
 	background-repeat: no-repeat;
 	background-size: cover;
 	.site-header
 	{
 		box-sizing:border-box;
-		padding-top: 125px;
-		padding-left: 500px;
-		h1
-		{
-			
-			font-size: 70px;
-			font-weight: $bold;
-			color: white;
-		};
-		img 
-		{
-			height: 65px;
-			margin-top: 30px;
+		padding-top: 220px;
+		#website-title{
+			width: 50%;
+			float: left;
+			padding-left: 40px;
+			h1
+			{
+				
+				font-size: 100px;
+				color: white;
+				font-family: $title-font;
+				margin-bottom: 10px;
+			};
+			#website-small-title
+			{
+				font-size: 20px;
+				color: white;
+				font-family: $subtitle-font;
+			}
+			img 
+			{
+				height: 65px;
+				margin-top: 30px;
+			}
+			.note{
+				width: 65px;
+				text-align: center;
+				color: white;
+				margin-top: 6px;
+			}
+
 		}
+		#website-intro{
+			width: 50%;
+			display: inline-block;
+			padding: 20px 40px 0 20px;
+			.para{
+				color: white;
+			}
+		}
+	}
+}
+
+#belief
+{
+	padding-bottom: 50px;
+	#quotation{
+		padding: 20px;
+		font-family: $title-font;
+		font-size: 30px;
+		color:$text-gray;
+		width: 470px;
+		span{
+			color: $green;
+			font-size: 50px;
+		}
+	}
+	#belief-text{
+		padding: 40px;
+	}
+	img{
+		height: 40px;
+	}
+	#quotation-left{
+	}
+	#quotation-right{
+		float: right;
+	}
+}
+
+#evaluation{
+	padding-bottom: 90px;
+	.col-lg-6{
+		padding: 40px;
+	}
+	.steps-container
+	{
+		width: 80%;
+		margin: 60px auto;
+		.step-col
+		{
+			padding: 20px;
+			width: 30%;
+			float: left;
+			background-color: white;
+			img
+			{
+				width: 25%;
+			}
+			h2
+			{
+				font-family: $title-font;
+				margin:10px 0;
+			}
+		}
+		.step-space{
+			width: 5%;
+			float: left;
+			height: 20px;
+
+		}
+		#step1 h2
+		{
+			color: $cyan;
+		}
+		#step2 h2
+		{
+			color: $green;
+		}
+		#step3 h2
+		{
+			color: $dark-blue;
+		}
+	}
+	#to-test{
+		width: 450px;
+		font-size: 17px;
+		font-family: $para-font;
+		font-weight: 500;
 	}
 }
 
@@ -41,14 +160,20 @@
 .section-brief
 {
 	text-align: center;
-	font-size: 11px;
-	line-height: 17px;
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: 200;
+	width: 85%;
+	margin: 0 auto;
 }
 
 .para
 {
-	font-size: 13px;
-	line-height: 20px;
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: 400;
+	color: $text-gray;
+	font-family: $para-font;
 }
 
 // Options section
@@ -57,24 +182,30 @@ $option-container-padding: 50px;
 {
 	padding-left:$option-container-padding;
 	padding-right:$option-container-padding;
-	padding-top:$option-container-padding;
+	padding-top:90px;
 	// margin-top: 50px;
 }
 
-$option-col-padding: 30px;
 .option-col
 {
-	padding-left:$option-col-padding;
-	padding-right:$option-col-padding;
+	padding-left:45px;
+	padding-right:45px;
 	border-box: box-sizing;
-	padding-bottom: 50px;
-	width: 100%;
+	padding-bottom: 90px;
+	width: 25%;
 	float: left;
+	text-align: center;
+	.para-title{
+		margin-bottom: 10px;
+	}
+	p{
+		padding-bottom: 30px;
+	}
 }
 
 .option-icon
 {
-	width: 30%;
+	width: 50%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -82,26 +213,22 @@ $option-col-padding: 30px;
 	box-sizing:border-box;
 }
 
-@media only screen and (min-width: 1001px)
+@media only screen and (max-width: 600px)
 {
 	.option-col
 	{
-		width: 25%;
+		width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 	.option-icon
 	{
 		width: 50%;
 	}
+	
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1000px)
-{
-	.option-col
-	{
-		width: 50%;
-	}
-	.option-icon
-	{
-		width: 50%;
-	}
+
+#contact{
+	padding-bottom: 90px;
 }

@@ -10,9 +10,10 @@
     <meta name="author" content="Lezhi Su">
 
 	<!-- font -->
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 
 	<!-- vendor css -->
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
@@ -23,55 +24,82 @@
 
 	<!-- local css -->
 	<link rel="stylesheet" href="css/main.css">
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
 
 	<!-- vendor script -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
 	<script src="js/responsive-nav.js"></script>
 </head>
 <body>
-	<div class="page-container">
-		<div class="content-container">
-			<nav class="nav">
-		    	<ul>
-			        <!-- <li><a href="#logo"><img src="img/ieadsm-logo.png"></a></li> -->
-			        <li><a href="#belief">INTRO</a></li>
-			        <li><a href="#evaluation">EVALUATION</a></li>
-			        <li><a href="#other-options">OPTIONS</a></li>
-			        <li><a href="#contact">CONTACT</a></li>
-		    	</ul>
-		    </nav>		
+	<div class="navigation">
+		<a id="to-home" href="index.html">
+			<img src="img/ieadsm-logo.png">
+		</a>
+		<div class="dropdown">
+			<button class="dropbtn">
+				<img src="img/hamburger.svg">
+			</button>
+			<div class="dropdown-content">
+		    	<a href="index.html#belief" target="_blank">Intro</a>
+		    	<a href="index.html#evaluation" target="_blank">Evaluation</a>
+		    	<a href="index.html#other-option" target="_blank">Options</a>
+		    	<a href="index.html#contact" target="_blank">Contact</a>
+		    </div>
 		</div>
-		
+	</div>
+	
+
+	<div class="page-container">		
 		<section id="homepage">
 			<div class="content-container">
 				<div class="site-header">
-					<h1>Enger <br> Entrepreneurs <br> Business <br> Guide</h1>
-					<img src="img/scroll-down-white.png">
+					<div id="website-title">
+						<h1>Fit to Serve</h1>
+						<p id="website-small-title">
+							Is your Energy Efficiency business model fit to serve?
+						</p>
+						<a href="#belief">
+							<img src="img/scroll-down-white.png">
+							<p class="note">
+							Please Scroll
+							</p>
+						</a>
+					</div>
+					<div id="website-intro">
+						<p class="para">
+							Climate change is trending business. The urgency for transition is felt by many entrepreneurs who expect it to lead to new –big- business opportunities. But when it comes to energy efficiency, we somehow are still waiting for the big breakthrough.
+							<br><br/>
+							Energy Efficiency isn't an easy value to build a business on. After analysing 42 companies that offer Energy Efficiency, we dare to say, to many consumers, energy efficiency is not a value at all…. This low interest in energy efficiency might be one of the many causes for a bad market uptake, but it is one that is not easily influenced.
+							<br><br/>
+							There are a few measures you can take to influence the growth of your business. These measures have to do with the way energy efficiency business models are designed. As most of the companies in the field of energy efficiency originate from technological backgrounds, their businesses are built to exploit these innovative technologies. The question is, are these business models also designed to meet the expectations of the user? 
+						</p>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="white-bg" id="belief">
 			<div class="content-container">
-				<h2 class="sub-title">OUR BELIEF</h2>
-				<hr class="sub-title-hr">
+				<h2 class="section-title">OUR BELIEF</h2>
+				<hr class="section-title-hr">
 				<div class="row">
 					<div class="col-sm-6">
-						Energy business model is facing with a transfromation towards <br>
-						<span>SERVICE-ORIENTED.</span>
+						<div id="quotation">
+							<img src="img/quotation-left.png" id="quotation-left">
+							<br>Almost every solution is a
+							<br><span>PRODUCT-SERVICE</span>
+							<br>combination or even 
+							<br>a service-only proposition.
+							<br>
+							<img src="img/quotation-right.png" id="quotation-right">
+							<div style="clear: both;"></div>
+						</div>
 					</div>
-					<div class="col-sm-6">
-						<h2 class="para-title">
-							Product....plus?
-						</h2>
+					<div class="col-sm-6" id="belief-text">
 						<p class="para">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Ut enim ad minim veniam, quicia deserunt mollit anim id est laborum.
-						</p>
-						<h2 class="para-title">
-							User Centered
-						</h2>
-						<p class="para">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quicia deserunt mollit anim id est laborum. Icing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quicia deserunt mollit anim id est laborum.
+							Nowadays, hardly any value proposition is a pure-product-proposition. Almost every solution is a product-service combination or even a service-only proposition. The famous and successful examples like Spotify, AirB&B and Spotify are all services enabled by smart and innovative technologies.
+							<br><br/>
+							This is no different in the field of energy efficiency. What might be considered as a high tech solution very often is a combination of a technology and ad-on services like helpdesks, installation or maintenance services, apps or other services. However, different from the famous examples, many business models in the field of energy efficiency, don’t seem to be designed for the actual value proposition. They are still designed as if the Value Proposition is a pure product solution. And it is exactly this ‘unfit’ business model that can be seen as a cause for a bad uptake. 
+							<br><br/>
+							Maybe you’re interested if there is room for improvement, and what you can do to improve. This test is designed to help you to get an impression if your businessmodel is supporting the business you’re in. Also, it provides you with some insights on the capabilities needed to run the business. 
 						</p>
 					</div>
 				</div>
@@ -79,61 +107,60 @@
 		</section>
 		<section class="gray-bg" id="evaluation">
 			<div class="content-container">
-				<h2 class="sub-title">A THREE-STEP EVALUATION</h2>
-				<hr class="sub-title-hr">
+				<h2 class="section-title">A THREE-STEP EVALUATION</h2>
+				<hr class="section-title-hr">
 				<p class="section-brief">
-					You are an entrepreneur in the field of energy efficiency. Changes are your business is based on a smart technology or an innovative combination of knowledge. You might be very happy with the way you run your business and the way it’s taking off in the market. But there is also a possibility your business isn’t taking off as you were expecting, and despite all the efforts, you can’t seem to get a grip on what it is that needs to be done. <br>
-					Chances are the key to growth can be found in your business model. Recent research shows that many Value propositions in the field of energy effiency aren’t supported by the right business model. Companies who do have a fit business model report a better performance in the market. <br>
-					Companies who have a business model that is not –completely- supporting the Maybe you’re interested if there is room for improvement, and what you can do to improve. This test is designed to help you to get an impression if your businessmodel is supporting the business you’re in. Also, it provides you with some insights on the capabilities needed to run the business.
+					This test consists of three sets of questions. First we will ask you something about your business model, than we ask about your capabilities and finally you will receive questions about the way you react on the market. 
+					<br>
+					When you completed the questions, we give you an advice on what kind of business you are in, the kind of pitfalls that are risky for you and some tips on possible next steps you might want to explore. 
 				</p>
-				<table>
-					<tr class="steps-row">
-						<th>1</th>
-						<th>
-							<div class="para-title">
-								Business Model
-							</div>
-							<div class="para">
-								Lets’ find out how is your business model doing in the transition towards service-oriented. there are 20 questions in totoal. It will take about 15 mins to finish this. 
-							</div>
-						</th>
-					</tr>
-					<tr class="spacing-row">
-						<td>----</td>
-						<td class="red-btn">
-						 	<a href="#">
-						 		Get Started	
-						 	</a>
-						</td>
-					</tr>
-					<tr class="steps-row">
-						<th>1</th>
-						<th>
-							<div class="para-title">
-								Business Model
-							</div>
-							<div class="para">
-								Lets’ find out how is your business model doing in the transition towards service-oriented. there are 20 questions in totoal. It will take about 15 mins to finish this. 
-							</div>
-						</th>
-					</tr>
-					<tr class="spacing-row">
-						<td>----</td>
-						<td class="red-btn">
-							<a href="#">
-								Get Started
-							</a>
-						</td>
-					</tr>
-				</table>
+
+				<div class="steps-container">
+					<div class="step-col" id="step1">
+						<img src="img/step1.png">
+						<h2>Business <br>Model</h2>
+						<p class="para">
+							Business model canvas by Alexander Osterwalder consists 9 building blocks that are key elements for a business. There are 5 questions. 
+							<br>
+						</p>
+					</div>
+					<div class="step-space"></div>
+					<div class="step-col" id="step2">
+						<img src="img/step2.png">
+						<h2> <br>Capabilities</h2>
+						<p class="para">
+							 Entrepreneurs’ capabilities are, of course, significant.
+							 <br>
+							 This section contains 4 questions about 4 capabilities.
+							 <br/>
+						</p>
+					</div>
+					<div class="step-space"></div>
+					<div class="step-col" id="step3">
+						<img src="img/step3.png">
+						<h2>Company <br>Context</h2>
+						<p class="para">
+							They way of dealing with stakeholders affects the relationships with the market. 
+							2 questions will help us evaluate your company context.  
+						</p>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+
+				<div class="red-btn" id="to-test">
+					<a href="Business Model.html">
+						Go to the Evaluation
+					</a>
+				</div>
 			</div>
 		</section>
+
 		<section class="white-bg" id="other-options">
 			<div class="content-container">
-				<h2 class="sub-title">OTHER OPTIONS</h2>
-				<hr class="sub-title-hr">
+				<h2 class="section-title">OTHER OPTIONS</h2>
+				<hr class="section-title-hr">
 				<p class="section-brief">
-					We organize off-line meetings and workshops. We offer toolkits and cases. You can click to know more about them.			
+					We organize off-line meetings and workshops. We offer toolkits and cases. You can click to know more about them.
 				</p>
 				<div class="option-container">
 					<div class="option-col">
@@ -142,11 +169,11 @@
 							Offline Workshop
 						</h2>
 						<p class="para">
-							The work of the DSM Technology Collaboration Program is organised through a series of Tasks and reported in a number of publications. It is managed by an Executive Committee (ExCo). Visit the News page for the latest information on our activities.
+							Find local offline workshops <br/><br>	
 						</p>
 						<div class="red-btn">
 							<a href="#">
-								Know More
+								KNOW MORE
 							</a>
 						</div>
 					</div>
@@ -156,11 +183,11 @@
 							Meet Others
 						</h2>
 						<p class="para">
-							The work of the DSM Technology Collaboration Program is organised through a series of Tasks and reported in a number of publications. It is managed by an Executive Committee (ExCo). Visit the News page for the latest information on our activities.
+							Find local network meetings and meet others
 						</p>
 						<div class="red-btn">
 							<a href="#">
-								Know More
+								KNOW MORE
 							</a>
 						</div>
 					</div>
@@ -170,11 +197,11 @@
 							Toolkit Download
 						</h2>
 						<p class="para">
-							The work of the DSM Technology Collaboration Program is organised through a series of Tasks and reported in a number of publications. It is managed by an Executive Committee (ExCo). Visit the News page for the latest information on our activities.
+							Download the toolkit<br/><br>
 						</p>
 						<div class="red-btn">
 							<a href="#">
-								Know More
+								KNOW MORE
 							</a>
 						</div>
 					</div>
@@ -184,23 +211,22 @@
 							Inspiring Cases
 						</h2>	
 						<p class="para">
-							The work of the DSM Technology Collaboration Program is organised through a series of Tasks and reported in a number of publications. It is managed by an Executive Committee (ExCo). Visit the News page for the latest information on our activities.
+							Get inspired by successful examples
 						</p>
 						<div class="red-btn">
 							<a href="#">
-								Know More
+								KNOW MORE
 							</a>
 						</div>
 					</div>
 					<div class="clear"></div>
 				</div>	
 			</div>
-			
 		</section>
 		<section class="gray-bg" id="contact">
 			<div class="content-container">
-				<h2 class="sub-title">CONTACT US</h2>
-				<hr class="sub-title-hr">
+				<h2 class="section-title">CONTACT US</h2>
+				<hr class="section-title-hr">
 				<div class="contact-wrap">
 					<div class="about-us">
 						<div id="contact-logo">
@@ -299,7 +325,7 @@
 								Postboks 5700 Sluppen <br>
 								N-7437 Trondheim <br>
 								<b>Telephone:</b> 0047996382180 <br>
-								<b>E-mail:</b> even.bjornstad@enova.no <br/><br/> <br/>
+								<b>E-mail:</b> even.bjornstad@enova.no <br/><br/> <br/> 
 							</p>
 						</li>
 						<li class="countries">
@@ -352,25 +378,45 @@
 					
 			</div>
 		</section>
+
+		<section id="page-footer">
+			<div class="content-container">
+				<h2 class="section-title">
+					FIND US ON
+				</h2>
+				<hr class="section-title-hr">
+				<ul class="social-icons">
+					<li id="twitter">
+						<a href="https://twitter.com/ieadsm" target="_blank">
+							<img src="img/social-twitter.png">
+						</a>
+					</li>
+					<li id="facebook">
+						<a href="https://www.facebook.com/groups/334127193974/" target="_blank">
+							<img src="img/social-facebook.png">
+						</a>
+					</li>
+					<li id="youtube">
+						<a href="https://www.youtube.com/channel/UCZDyeu3EzhGsqHtNW7jmMUQ" target="_blank">
+							<img src="img/social-youtube.png">
+						</a>
+					</li>
+					<li id="slideshare">
+						<a href="https://www.slideshare.net/ceciliabengtson" target="_blank">
+							<img src="img/social-slideshare.png">
+						</a>
+					</li>
+				</ul>
+				<div style="clear: both;"></div>
+				<p class="note">
+					Terms & Conditions  |  Disclaimer  |  Privacy Policy
+				</p>
+				<p class="note">
+					Copyright © ieadsm
+				</p>
+			</div>
+		</section>
 	</div>
 
-	<!-- responsive navigation from Bootstrap.com -->
-	<script>
-      var navigation = responsiveNav(".nav-collapse", {
-        animate: true,                    // Boolean: Use CSS3 transitions, true or false
-        transition: 284,                  // Integer: Speed of the transition, in milliseconds
-        label: "Menu",                    // String: Label for the navigation toggle
-        insert: "after",                  // String: Insert the toggle before or after the navigation
-        customToggle: "",                 // Selector: Specify the ID of a custom toggle
-        closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
-        openPos: "relative",              // String: Position of the opened nav, relative or static
-        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
-        navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
-        jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
-        init: function(){},               // Function: Init callback
-        open: function(){},               // Function: Open callback
-        close: function(){}               // Function: Close callback
-      });
-    </script>
 </body>
 </html>
